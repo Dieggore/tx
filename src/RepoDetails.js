@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const RepoDetails = ({ repoDetails }) => {
-  const { full_name, name, id, open_issues, description, html_url, contributors } = repoDetails;
+  const { full_name, name, id, open_issues, description, html_url, contributors = [] } = repoDetails;
   return (
     <section className="repo-details-container">
     <ol>
