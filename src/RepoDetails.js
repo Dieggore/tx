@@ -17,7 +17,7 @@ export const RepoDetails = ({ repoDetails }) => {
         <p>
           Details:
           <br/>
-          <a href={html_url} target="_blank">See details</a>
+          <a href={html_url} target="_blank">Open details in new tab...</a>
         </p>
 
         <div>
@@ -29,7 +29,7 @@ export const RepoDetails = ({ repoDetails }) => {
               <div>
                 <p>Login: {c.login}<br/></p>
                 <p>Contributions: {c.contributions}</p>
-                <a href={c.html_url}>See contributor's github<br/></a>
+                <a href={c.html_url} target="_blank">See contributor's github<br/></a>
               </div>
             </div>
             ))}
