@@ -1,0 +1,122 @@
+body {
+  background-color: #00000033;
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 740px;
+  border: 2px solid #818181;
+  margin-top: 30px;
+}
+
+.container section:nth-child(1) {
+  padding: 10px;
+  background-color: #bfe0dc;
+  min-width: 375px;
+  overflow: scroll;
+}
+
+.container section:nth-child(2) {
+  padding: 10px;
+  background-color: rgba(31, 28, 49, 0.86);
+  flex-grow:3;
+  overflow: scroll;
+}
+
+.container section:nth-child(1) ol {
+  padding-left: 0;
+  background-color: #bfe0dc;
+}
+
+.container section:nth-child(2) ol a {
+  color: #fcfcfc;
+}
+
+.container section ol h3 {
+  text-align: center;
+}
+
+.container section:nth-child(2) ol a:visited {
+  color: lightseagreen;
+}
+
+.search-container {
+  background-color: white;
+  margin-bottom: 10px;
+  color: lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-container span {
+  margin-left: 11px;
+  font-size: 16px;
+  background-color: white;
+  display: inline-block;
+  color: #777777;
+  transform: rotate(-45deg)
+}
+
+.search-input {
+  border: none;
+  border: 0;
+  box-shadow: none;
+  background-color: white;
+  height: 20px;
+  font-size: 13px;
+  padding: 3px;
+  padding-left: 10px;
+  border-radius: 5px;
+  width:75%;
+  min-width: 150px;
+  outline-style: none;
+}
+
+.li-project {
+  background-color: #8ab7bf;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #222222;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.li-project span {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.li-project:hover {
+  color: rgba(255, 255, 255, 0.78);
+  background-color: #027697;
+}
+
+.repo-details-container {
+  color:white;
+}
+
+img.avatar {
+  height: 80px;
+  width: 80px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.contributor-container {
+  border: 1px dotted white;
+  min-width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  border-radius: 5px;
+  padding: 13px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
