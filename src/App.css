@@ -21,6 +21,7 @@ body {
   background-color: #bfe0dc;
   overflow: scroll;
   overflow-x: hidden;
+  min-width: 323px;
 }
 
 .container section:nth-child(2) {
