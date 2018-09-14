@@ -11,5 +11,5 @@ In order to run it, follow the next steps:
 About the project
 
 - The app initially loads a list of repositories owned by facebook.
-- The list is sorted by watchers in an ascending way.
+- The list is sorted by watchers in descending way.
 - Clicking on a project fetch the project's contributors from the api to display them among the other project details.

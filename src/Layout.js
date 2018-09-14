@@ -23,7 +23,7 @@ export class Layout extends Component {
     const { repositories, repoDetails } = this.props;
     const { search } = this.state;
 
-    const sortedRepos = sortBy(repositories, ['watchers']).filter(repo => filterRepos(repo, search));
+    const sortedRepos = sortBy(repositories, ['watchers']).filter(repo => filterRepos(repo, search)).reverse();
 
     // I could have abstracted this to it's own component.
     // I left it this way to show this is another alternative...
