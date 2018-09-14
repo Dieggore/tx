@@ -7,7 +7,7 @@ export const RepoDetails = ({ repoDetails }) => {
     <section className="repo-details-container">
       <ol>
       {!repoDetails.full_name ?
-        (<h3>{'Click on any project in the list to load it\'s info'}</h3>) :
+        (<h3 className="click-instruction">{'<-- Click on any project in the list to load it\'s info...'}</h3>) :
         (<div>
           <h3>Project {name}</h3>
             <div>
