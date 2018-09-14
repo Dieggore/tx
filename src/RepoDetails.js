@@ -26,11 +26,9 @@ export const RepoDetails = ({ repoDetails }) => {
               {contributors.map(c => (
                 <div key={c.id} className="contributor-container">
                   <img className="avatar" src={c.avatar_url} alt=""/>
-                  <div>
                     <p>Login: {c.login}<br/></p>
                     <p>Contributions: {c.contributions}</p>
                     <a href={c.html_url} target="_blank">See contributor's github<br/></a>
-                  </div>
                 </div>
               ))}
             </div>

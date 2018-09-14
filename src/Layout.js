@@ -30,7 +30,7 @@ export class Layout extends Component {
     // I left it this way to show this is another alternative...
     const ListItems = (repo) => (
       <li key={repo.id} className="li-project" name={repo.name} onClick={this.loadDetails}>
-        Name:&nbsp;&nbsp;<span>{repo.name}</span>
+        Name:&nbsp;&nbsp;<br/><span>{repo.name}</span>
         <br/>
         Watchers count: <span>{repo.watchers_count}</span>
       </li>
