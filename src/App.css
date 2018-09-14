@@ -113,7 +113,8 @@ img.avatar {
   border: 1px dotted white;
   min-width: 30%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   width: 38%;
   border-radius: 5px;
