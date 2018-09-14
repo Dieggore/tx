@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 export const RepoDetails = ({ repoDetails }) => {
   const { full_name, name, id, open_issues, description, html_url, contributors = [] } = repoDetails;
@@ -8,7 +8,7 @@ export const RepoDetails = ({ repoDetails }) => {
       <ol>
       {!repoDetails.full_name ?
         (<h3 className="click-instruction">{'<-- Click on any project in the list to load it\'s info...'}</h3>) :
-        (<div>
+        (<Fragment>
           <h3>Project {name}</h3>
             <div>
               <p>Full name: {full_name}</p>
@@ -35,7 +35,7 @@ export const RepoDetails = ({ repoDetails }) => {
               ))}
             </div>
             </div>
-         </div>)
+         </Fragment>)
       }
       </ol>
     </section>
