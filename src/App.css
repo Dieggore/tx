@@ -15,9 +15,10 @@ body {
 .container section:nth-child(1) {
   padding: 10px;
   background-color: #bfe0dc;
-  min-width: 375px;
   overflow: scroll;
 }
+
+
 
 .container section:nth-child(2) {
   padding: 10px;
@@ -123,4 +124,47 @@ img.avatar {
 
 .click-instruction {
   margin-top: 320px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container section:nth-child(2) ol {
+    padding-left: 0;
+    max-width: 455px;
+  }
+
+
+
+  .contributors-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contributor-container {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+
+  .contributor-container p {
+    font-size: 12px
+  }
+
+  img.avatar {
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  .search-container span {
+    visibility: hidden;
+  }
 }

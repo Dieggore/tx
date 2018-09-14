@@ -21,7 +21,7 @@ export const RepoDetails = ({ repoDetails }) => {
             </div>
             <div>
             Contributors:
-            <div>
+            <div className="contributors-layout">
               {contributors.length <= 0 && <div>No contributors found</div>}
               {contributors.map(c => (
                 <div key={c.id} className="contributor-container">

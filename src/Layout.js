@@ -11,6 +11,7 @@ export class Layout extends Component {
     super(props);
     this.state = { search: '' };
   }
+
   componentDidMount() {
     this.props.actions.loadRepos();
   }
@@ -42,7 +43,7 @@ export class Layout extends Component {
             {repositories.length ? (<h3>List of facebook projects</h3>) : (<h3>Loading repos...</h3>)}
             <div className="search-container">
               <span>&#9906;</span>
-              <input type="text" className="search-input" value={this.state.search} placeholder="Search projects by name" onChange={e => this.onChangeSearch(e.target.value)}/>
+              <input type="text" className="search-input" value={this.state.search} placeholder="Search projects" onChange={e => this.onChangeSearch(e.target.value)}/>
             </div>
             {sortedRepos.map(ListItems)}
           </ol>
