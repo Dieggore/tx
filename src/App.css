@@ -134,6 +134,7 @@ img.avatar {
 
 
 
+
   .contributors-layout {
     display: flex;
     flex-direction: column;
@@ -162,6 +163,11 @@ img.avatar {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+  }
+  .container {
+    height: auto;
+    border: none;
+    margin-top: 0px;
   }
 
   .search-container span {
